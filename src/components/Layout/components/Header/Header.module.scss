@@ -95,6 +95,19 @@
     }
 }
 
+// ACTION
+
+.action {
+    display: flex;
+    align-items: center;
+}
+
 .custom-btn {
     color: rgba(22, 24, 35, 0.75);
+}
+.more-btn {
+    margin-left: 24px;
+    padding: 4px 8px;
+    font-size: 1.8rem;
+    background-color: transparent;
 }

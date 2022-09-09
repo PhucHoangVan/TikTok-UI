@@ -1,0 +1,24 @@
+// MENU
+
+.menu {
+    width: 223px;
+
+    .menu-wrapper .menu-item {
+        margin-left: 0;
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        border-radius: 0;
+        color: var(--black);
+        font-weight: 600;
+        padding: 12px 16px;
+
+        &:hover {
+            background: rgba(22, 24, 35, 0.03);
+        }
+    }
+}
+
+.menu-wrapper {
+    padding-bottom: 8px;
+}
