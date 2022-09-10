@@ -22,3 +22,28 @@
 .menu-wrapper {
     padding-bottom: 8px;
 }
+
+// MENU HEADER
+.menu-header {
+    height: 50px;
+    position: relative;
+    margin-top: -8px;
+}
+
+.back-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.6rem;
+}
+
+.header-menu__title {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
+}

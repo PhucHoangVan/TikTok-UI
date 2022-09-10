@@ -26,6 +26,32 @@ const MENU_ITEMS = [
     {
         icon: <FontAwesomeIcon icon={faGlobe} />,
         title: 'English',
+        submenu: {
+            title: 'Language',
+            data: [
+                {
+                    code: 'en',
+                    title: 'English',
+                    submenu: {
+                        title: 'English',
+                        data: [
+                            {
+                                code: 'en-us',
+                                title: 'US English',
+                            },
+                            {
+                                code: 'en-uk',
+                                title: 'UK English ',
+                            },
+                        ],
+                    },
+                },
+                {
+                    code: 'vi',
+                    title: 'Tiếng Việt',
+                },
+            ],
+        },
     },
     {
         icon: <FontAwesomeIcon icon={faCircleQuestion} />,
@@ -37,6 +63,25 @@ const MENU_ITEMS = [
         title: 'Keyboard shortcuts',
     },
 ];
+
+// Handle MenuChange:
+const handleMenuChange = (menuItem) => {
+    // handle logic here:
+    // Example:
+    switch (menuItem.code) {
+        case 'en-us':
+            console.log('Translate English US');
+            break;
+        case 'en-uk':
+            console.log('Translate English UK');
+            break;
+        case 'vi':
+            console.log('Translate Tieng Viet');
+            break;
+        default:
+            break;
+    }
+};
 
 function Header() {
     const [searchHistory, setSearchHistory] = useState([]);
@@ -85,7 +130,7 @@ function Header() {
                         Log in
                     </Button>
 
-                    <PopperMenu items={MENU_ITEMS}>
+                    <PopperMenu items={MENU_ITEMS} onChange={handleMenuChange}>
                         <button className={cx('more-btn')}>
                             <FontAwesomeIcon icon={faEllipsisVertical} />
                         </button>
