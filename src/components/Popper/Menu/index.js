@@ -38,7 +38,12 @@ function Menu({ children, items = [], onChange }) {
     const renderItem = () => {
         return currentMenu.data.map((item, index) => {
             return (
-                <MenuItem className={cx('menu-item')} key={index} data={item} onClick={() => handleChooseItem(item)} />
+                <MenuItem
+                    className={cx('menu-item', { separate: item.separate })}
+                    key={index}
+                    data={item}
+                    onClick={() => handleChooseItem(item)}
+                />
             );
         });
     };
@@ -46,9 +51,11 @@ function Menu({ children, items = [], onChange }) {
     return (
         <Tippy
             interactive
-            visible
+            // visible
             placement="bottom-end"
             delay={[0, 600]}
+            onHide={() => setHistory((prev) => prev.slice(0, 1))}
+            offset={[10, 8]}
             render={(attrs) => (
                 <div className={cx('menu')} tabIndex="-1" {...attrs}>
                     <PopperWrapper className={cx('menu-wrapper')}>

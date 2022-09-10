@@ -113,3 +113,20 @@
     background-color: transparent;
     cursor: pointer;
 }
+
+// User
+.action-btn {
+    color: rgba(22, 24, 35, 1);
+    background-color: transparent;
+    font-size: 2.4rem;
+    padding: 4px 14px;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 14px;
+    cursor: pointer;
+}
