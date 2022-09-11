@@ -1,5 +1,4 @@
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;1,100;1,500&display=swap');
 
 :root {
     // Default layout:
@@ -25,9 +24,34 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'ProximaNova', sans-serif;
     // line-height: 1.5rem;
     text-rendering: optimizeSpeed;
+}
+
+// Embeded Font
+@font-face {
+    font-family: ProximaNova;
+    src: url(/assets/fonts/Proxima-Nova-Regular.woff2);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(/assets/fonts/ProximaNova-Semibold.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    src: url(/assets/fonts/Proxima-Nova-Bold.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: SofiaPro;
+    src: url(/assets/fonts/sofiapro-bold.woff2);
+    font-weight: 700;
 }
 
 button,

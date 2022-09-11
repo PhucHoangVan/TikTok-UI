@@ -114,6 +114,25 @@
     cursor: pointer;
 }
 
+.inbox-btn {
+    position: relative;
+}
+
+.inbox-quantity {
+    position: absolute;
+    top: 2px;
+    right: 7px;
+    width: 22px;
+    height: 16px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--primary);
+}
+
 // User
 .action-btn {
     color: rgba(22, 24, 35, 1);

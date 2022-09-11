@@ -1,14 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCircleXmark,
-    faSpinner,
     faMagnifyingGlass,
     faPlus,
     faEllipsisVertical,
     faGlobe,
     faCircleQuestion,
     faKeyboard,
-    faArrowUpFromBracket,
     faUserAlt,
     faGear,
     faSignOut,
@@ -26,8 +24,9 @@ import images from '~/assets/images';
 import Accountitem from '~/components/AccountItem';
 import Button from '~/components/Button';
 import { Menu as PopperMenu } from '~/components/Popper';
-import { faTelegram, faTiktok } from '@fortawesome/free-brands-svg-icons';
-import { faMessage } from '@fortawesome/free-regular-svg-icons';
+import { faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -164,17 +163,18 @@ function Header() {
                         <>
                             <Tippy delay={[0, 100]} content="Upload Video" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faArrowUpFromBracket} />
+                                    <UploadIcon />
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 100]} content="Message" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faTelegram} />
+                                    <MessageIcon />
                                 </button>
                             </Tippy>
                             <Tippy delay={[0, 100]} content="Inbox" placement="bottom">
-                                <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faMessage} />
+                                <button className={cx('action-btn', 'inbox-btn')}>
+                                    <InboxIcon />
+                                    <span className={cx('inbox-quantity')}>7</span>
                                 </button>
                             </Tippy>
                         </>
@@ -191,10 +191,11 @@ function Header() {
 
                     <PopperMenu items={currentUser ? MenuFullOption : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 src="https://vaithuhayho.com/wp-content/uploads/2021/04/hinh-anh-avatar-de-thuong-3-2.jpg"
                                 alt="user name"
                                 className={cx('user-avatar')}
+                                fallback="https://www.nicepng.com/png/detail/31-315310_react-hexagon-react-js-transparent-background.png"
                             />
                         ) : (
                             <>
