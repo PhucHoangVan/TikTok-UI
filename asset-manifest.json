@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/TikTok-UI/static/css/main.76664a00.css",
-    "main.js": "/TikTok-UI/static/js/main.0b2d11d2.js",
+    "main.css": "/TikTok-UI/static/css/main.ccd8b2f1.css",
+    "main.js": "/TikTok-UI/static/js/main.345566ca.js",
     "static/js/787.4c9d15e8.chunk.js": "/TikTok-UI/static/js/787.4c9d15e8.chunk.js",
     "static/media/ProximaNova-Semibold.woff2": "/TikTok-UI/static/media/ProximaNova-Semibold.db7972dbe0b808f96bae.woff2",
     "static/media/sofiapro-bold.woff2": "/TikTok-UI/static/media/sofiapro-bold.1d7186488612ac20891f.woff2",
@@ -9,12 +9,12 @@
     "static/media/Proxima-Nova-Regular.woff2": "/TikTok-UI/static/media/Proxima-Nova-Regular.6c83037ae28747e6d774.woff2",
     "static/media/logo.svg": "/TikTok-UI/static/media/logo.f60ff6091bb40161771f84f1735ff1a2.svg",
     "index.html": "/TikTok-UI/index.html",
-    "main.76664a00.css.map": "/TikTok-UI/static/css/main.76664a00.css.map",
-    "main.0b2d11d2.js.map": "/TikTok-UI/static/js/main.0b2d11d2.js.map",
+    "main.ccd8b2f1.css.map": "/TikTok-UI/static/css/main.ccd8b2f1.css.map",
+    "main.345566ca.js.map": "/TikTok-UI/static/js/main.345566ca.js.map",
     "787.4c9d15e8.chunk.js.map": "/TikTok-UI/static/js/787.4c9d15e8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.76664a00.css",
-    "static/js/main.0b2d11d2.js"
+    "static/css/main.ccd8b2f1.css",
+    "static/js/main.345566ca.js"
   ]
 }
