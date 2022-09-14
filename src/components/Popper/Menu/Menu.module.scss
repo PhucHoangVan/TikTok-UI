@@ -28,6 +28,10 @@
     padding-bottom: 8px;
 }
 
+.menu-scroll {
+    overflow-y: auto;
+}
+
 // MENU HEADER
 .menu-header {
     height: 50px;
@@ -47,6 +51,7 @@
 }
 
 .header-menu__title {
+    flex-shrink: 0;
     font-size: 1.6rem;
     display: flex;
     justify-content: center;

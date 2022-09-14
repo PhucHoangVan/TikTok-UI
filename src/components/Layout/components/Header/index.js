@@ -12,6 +12,7 @@ import {
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import { Link } from 'react-router-dom';
 
 import styles from './Header.module.scss';
 import images from '~/assets/images';
@@ -116,7 +117,9 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <img src={images.logo} alt="Tiktok"></img>
+                <Link to="/">
+                    <img src={images.logo} alt="Tiktok"></img>
+                </Link>
                 <div>
                     <Search />
                 </div>

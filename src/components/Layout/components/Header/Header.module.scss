@@ -4,10 +4,15 @@
     --search-top-and-bottom-spacer: 18px;
     --search-btn-width: 52px;
 
+    position: fixed;
+    top: 0;
+    left: 0;
     height: var(--default-layout-header-height);
     box-shadow: 0 1px 1px rgb(0 0 0 /12%);
     display: flex;
     justify-content: center;
+    background-color: var(--white);
+    z-index: 10;
     width: 100%;
 }
 
