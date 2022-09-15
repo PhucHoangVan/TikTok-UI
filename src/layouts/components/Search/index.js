@@ -3,7 +3,7 @@ import { faCircleXmark, faMagnifyingGlass, faSpinner } from '@fortawesome/free-s
 import classNames from 'classnames/bind';
 import HeadlessTippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
-import * as searchServises from '~/apiServices/searchServices';
+import * as searchServises from '~/services/searchService';
 
 import { useEffect, useState, useRef } from 'react';
 
